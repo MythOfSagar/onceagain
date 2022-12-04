@@ -593,6 +593,9 @@
   @media only screen and (max-width: 425px) {
     #nameSagar h1{font-size: 42px;}
     #nameSagar h2{font-size: 21px;}
+    .statsIMG img{
+      width: 230px;
+    }
     
     .portfolio__worklist {
       display: grid;
