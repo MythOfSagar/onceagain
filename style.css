@@ -62,7 +62,7 @@
   nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
   
     position: fixed;
@@ -254,12 +254,19 @@
   /* My Service Section */
   #services {
     padding: 30px 0;
+    margin-top: -60px;
+  }
+  #services h6{margin-bottom: 10px;}
+
+  #mySkills{
+    margin-bottom:-500px;
   }
   .services__list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(4 ,1fr);
     gap: 40px;
-    margin-top: 50px;
+    max-width: fit-content;
+    margin-top: 40px;
   }
   .services__list div {
     background-color: #2c2b2c;
@@ -276,6 +283,10 @@
     font-weight: 500;
     margin-bottom: 20px;
   }
+  .services__list img{
+    height: 50px;
+  }
+
   .services__list div a {
     text-decoration: none;
     color: #efefef;
@@ -389,6 +400,9 @@
   #contact span {
     color: #8a2be2;
   }
+  #contactDetails{
+     margin-top: 50px;
+  }
   .contact__left {
     flex-basis: 35%;
   }
@@ -478,40 +492,54 @@
     cursor: pointer;
   }
   
-  @media only screen and (max-width: 769px) {
+  @media only screen and (min-width:426px) and (max-width: 768px) {
     .express-next{ margin-top: -25px}
     #nameSagar{
       margin-top: 60px;
     }
     #nameSagar h1{
-      font-size: 76px;
+      font-size: 70px;
     }
     #nameSagar h2{
-      font-size: 45px;
+      font-size: 40px;
+    }
+    #somethingSpecial{
+      margin-top: 0px;
     }
     #about {
-      margin-top: 140px;
-      margin-bottom: 150px;
+      margin-top: 25px;
+      margin-bottom: 0px;
   }
   nav { padding-left:40px ;}
-  
+
+  #portfolio{
+    margin-top: -30px;
+    margin-bottom: -100px;
+  }
+  #contactMe{
+    font-size: 40px;
+  }
   .services__list {
     grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
+    gap: 25px;
   }
+  .services__list h3{
+     font-size: 25px;
+  }
+  .services__list img{margin-top: 10px;}
   .services__list div{
-    width: 160px;
-    height: 170px;
-    font-size: 16px;
+    width: 140px;
+    height: 150px;
     text-align: center;
     justify-content: center;
     padding: 0px;
   }
   }
   
-  @media only screen and (max-width: 426px) {
-    #nameSagar h1{font-size: 40px;}
+  @media only screen and (max-width: 425px) {
+    #nameSagar h1{font-size: 42px;}
     #nameSagar h2{font-size: 21px;}
+    
     nav {
       padding-left: 20px;
       padding-right: 20px;
@@ -575,12 +603,17 @@
       cursor: pointer;
     }
     /* Media Queries About */
+    
     #about {
       padding: 10px;
-      margin-top: -110px;
+      margin-top: 0px;
+      margin-bottom: 0px;
     }
     #about .portfolio__btn {
       padding: 10px 10px;
+    }
+    #avatar{
+      margin-bottom: 50px;
     }
     .about__picture {
       /* width: 100%; */
@@ -604,13 +637,16 @@
       flex-basis: 100%;
     }
     #services {
-      margin-top: 550px;
-      margin-bottom: -100px;
+      margin-top: 300px;
+      margin-bottom: -30px;
     }
     .services__list {
       grid-template-columns: repeat(4, 1fr);
       gap: 10px;
       
+    }
+    #portfolio{
+      margin-bottom: -150px;
     }
     .services__list div{
      
@@ -630,32 +666,40 @@
     .express-next{ margin-top: -20px}
   }
   
-  @media only screen and (max-width: 376px) {
+  @media only screen and (max-width: 375px) {
     #nameSagar h1{font-size: 37px;}
     #nameSagar h2{font-size: 21px;}
     #services {
-      margin-top: 540px;
+      margin-top: 340px;
+      margin-bottom: 30px;
     }
     #servicesDiv{
-      margin-bottom: 0px;
       margin-top: 10px;}
+
       .contact__left{
-        margin-top: -100px;
+        margin-top: 00px;
       }
   }
   
   @media only screen and (max-width: 321px) {
     #nameSagar h1{font-size: 32px;}
-    #nameSagar h2{font-size: 21px;}
+    #nameSagar h2{font-size: 19px;}
     #footer{width: 100%;
       background-color: #2c2b2c;
     }
     #services {
-      margin-top: 640px;
+      margin-top: 340px;
     }
     .services__list {
       grid-template-columns: repeat(4, 1fr);
-      gap: 5px;
+      gap: 15px;
+    }
+    .services__list div img{
+      margin-top: 10px;
+      height: 30px;
+    }
+    .services__list div{
+      width: 60px;
     }
    
   }  
