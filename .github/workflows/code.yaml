@@ -20,15 +20,12 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16.x
-      - name: Install dependencies
-        run: npm i
-      - name: build project
-        run: npm run build
+   
       - name: Upload artifact in order to deploy
         uses: actions/upload-artifact@v3
         with:
           name: production-files
-          path: ./build
+          path: ./onceagain
 
   deploy:
     name: deploy
@@ -40,7 +37,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: production-files
-          path: ./build
+          path: ./onceagain
 
       - name: Deploy to github pages
         uses: peaceiris/actions-gh-pages@v3
