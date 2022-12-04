@@ -261,6 +261,21 @@
   #mySkills{
     margin-bottom:-500px;
   }
+  #statistics img{
+    width: 400px;
+  }
+  
+  .calendar div span{
+       color: whitesmoke
+  }
+  .statsIMG{
+    margin-top: 25px;
+    display: flex;gap: 10px;}
+
+    #gitCalender{
+      margin-top: 25px;
+    }
+
   .services__list {
     display: grid;
     grid-template-columns: repeat(4 ,1fr);
@@ -316,11 +331,12 @@
   }
   .portfolio__worklist {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     gap: 40px;
     margin-top: 50px;
   }
   .portfolio__worklist-work {
+    height: fit-content;
     border-radius: 10px;
     position: relative;
     overflow: hidden;
@@ -395,6 +411,18 @@
   .portfolio__btn:hover {
     background-color: #8a2be2;
     transition: all ease-in-out 0.5s;
+  }
+  .projectIcons {
+    display: flex;
+    gap: 10px; 
+    width: 80%; 
+    margin: auto;
+  }
+  .projectIcons i{
+    font-size: 50px;
+  }
+  .projectIcons h1{
+    font-size: 30px;
   }
   /* Contact Section */
   #contact span {
@@ -491,6 +519,16 @@
     display: none;
     cursor: pointer;
   }
+  .individualProjects{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .individualProjects a{
+    margin: auto;
+    width: 100px;
+  }
+ 
   
   @media only screen and (min-width:426px) and (max-width: 768px) {
     .express-next{ margin-top: -25px}
@@ -533,6 +571,9 @@
     text-align: center;
     justify-content: center;
     padding: 0px;
+  }
+  #statistics img{
+    width: 300px;
   }
   }
   
@@ -662,7 +703,7 @@
     .services__list div h3{
       font-size: 13px;
     }
-  
+    .statsIMG{display: flex; flex-direction: column;gap: 10px;}
     .express-next{ margin-top: -20px}
   }
   
@@ -702,4 +743,4 @@
       width: 60px;
     }
    
-  }  
+  }
