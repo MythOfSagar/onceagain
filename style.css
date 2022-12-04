@@ -261,17 +261,27 @@
   #mySkills{
     margin-bottom:-500px;
   }
-  #statistics img{
-    width: 400px;
-  }
+ 
   
   .calendar div span{
        color: whitesmoke
+  }
+  .calendar {
+    width: 80%;
+  }
+  .calendar{
+    overflow: auto;
+    justify-content: left;
   }
   .statsIMG{
     margin-top: 25px;
     display: flex;gap: 10px;}
 
+    .statsIMG img{
+      width: 400px;
+    }
+   
+   
     #gitCalender{
       margin-top: 25px;
     }
@@ -531,6 +541,11 @@
  
   
   @media only screen and (min-width:426px) and (max-width: 768px) {
+
+    
+    .statsIMG img{
+      width: 270px;
+    }
     .express-next{ margin-top: -25px}
     #nameSagar{
       margin-top: 60px;
@@ -572,9 +587,7 @@
     justify-content: center;
     padding: 0px;
   }
-  #statistics img{
-    width: 300px;
-  }
+  
   }
   
   @media only screen and (max-width: 425px) {
@@ -704,10 +717,12 @@
       font-size: 13px;
     }
     .statsIMG{display: flex; flex-direction: column;gap: 10px;}
+    
     .express-next{ margin-top: -20px}
   }
   
   @media only screen and (max-width: 375px) {
+    .statsIMG{display: flex; flex-direction: column;gap: 10px;}
     #nameSagar h1{font-size: 37px;}
     #nameSagar h2{font-size: 21px;}
     #services {
